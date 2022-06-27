@@ -1,5 +1,6 @@
 __pypackages__
 .pdm.toml
 dist
+build
 main.dist
 main.build

@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "paddlenlp>=2.3.3",
     "paddlepaddle>=2.3.0",
+    "setuptools>=62.6.0",
 ]
 requires-python = ">=3.8"
 license = {text = "MIT"}
@@ -17,11 +18,12 @@ license = {text = "MIT"}
 
 [tool.pdm.scripts]
 start = "python src/main.py"
-build = "python -m nuitka --standalone src/main.py "
+build = "python -m nuitka --mingw64 --show-progress --show-memory --standalone --plugin-enable=numpy --remove-output --output-dir=dist src/main.py "
 
 [tool.pdm.dev-dependencies]
 build = [
     "nuitka>=0.9",
+    "orderedset>=2.0.3"
 ]
 
 [build-system]
