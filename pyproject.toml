@@ -1,0 +1,29 @@
+[project]
+name = "uie-web"
+version = "0.0.1"
+description = "paddlenlp uie with web-ui"
+authors = [
+    {name = "sovlookup", email = "gonorth@qq.com"},
+]
+dependencies = [
+    "paddlenlp>=2.3.3",
+    "paddlepaddle>=2.3.0",
+]
+requires-python = ">=3.8"
+license = {text = "MIT"}
+[project.optional-dependencies]
+
+[tool.pdm]
+
+[tool.pdm.scripts]
+start = "python src/main.py"
+build = "python -m nuitka --standalone src/main.py "
+
+[tool.pdm.dev-dependencies]
+build = [
+    "nuitka>=0.9",
+]
+
+[build-system]
+requires = ["pdm-pep517>=0.12.0"]
+build-backend = "pdm.pep517.api"
