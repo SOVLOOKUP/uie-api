@@ -24,8 +24,8 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-2019]
-        pyversion: 3.8
-        arch: x64
+        pyversion: [3.8]
+        arch: [x64, x86]
 
     # create steps
     steps:
@@ -39,7 +39,7 @@ jobs:
       - name: Set up MinGW
         uses: egor-tensin/setup-mingw@v2
         with:
-          platform: x64
+          platform: ${{ matrix.arch }}
 
       - uses: pdm-project/setup-pdm@main
         name: Setup PDM
