@@ -1,4 +1,5 @@
 __pypackages__
 .pdm.toml
 dist
-main.*
+main.dist
+main.build
