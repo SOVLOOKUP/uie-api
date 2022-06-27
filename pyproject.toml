@@ -18,13 +18,6 @@ license = {text = "MIT"}
 
 [tool.pdm.scripts]
 start = "python src/main.py"
-build = "python -m nuitka --mingw64 --show-progress --show-memory --standalone --plugin-enable=numpy --remove-output --output-dir=dist src/main.py "
-
-[tool.pdm.dev-dependencies]
-build = [
-    "nuitka>=0.9",
-    "ordered-set>=4.1.0"
-]
 
 [build-system]
 requires = ["pdm-pep517>=0.12.0"]
