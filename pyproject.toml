@@ -23,7 +23,7 @@ build = "python -m nuitka --mingw64 --show-progress --show-memory --standalone -
 [tool.pdm.dev-dependencies]
 build = [
     "nuitka>=0.9",
-    "orderedset>=2.0.3"
+    "ordered-set>=4.1.0"
 ]
 
 [build-system]
