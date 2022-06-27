@@ -8,4 +8,5 @@ paddlenlp 的 UIE 信息抽取
 
 | 功能 | 命令 |
 | ------ | ------ |
+| 安装依赖 | `pdm install` |
 | 启动 | `pdm run start` |
