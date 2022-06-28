@@ -2,3 +2,4 @@ __pypackages__
 .pdm.toml
 dist
 build
+__pycache__
