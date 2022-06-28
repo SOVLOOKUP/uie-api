@@ -1,7 +1,7 @@
 [project]
-name = "uie-web"
+name = "uie-api"
 version = "0.0.1"
-description = "paddlenlp uie with web-ui"
+description = "paddlenlp uie web api"
 authors = [
     {name = "sovlookup", email = "gonorth@qq.com"},
 ]
