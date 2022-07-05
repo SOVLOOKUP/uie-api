@@ -4,9 +4,10 @@
 
 ## 开发
 
-1. 依赖 [pdm](https://github.com/pdm-project/pdm) 包管理器
+1. 依赖 [pdm2.0](https://github.com/pdm-project/pdm) 包管理器
 
 | 功能 | 命令 |
 | ------ | ------ |
-| 安装依赖 | `pdm install` |
-| 启动 | `pdm run start` |
+| 安装依赖 | `pdm prepare` |
+| 开发 | `pdm dev` |
+| 启动 | `pdm start` |

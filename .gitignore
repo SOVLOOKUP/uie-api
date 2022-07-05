@@ -3,3 +3,9 @@ __pypackages__
 dist
 build
 __pycache__
+requirements.txt
+.venv
+main.spec
+requirements_with_opt.txt
+uie_api.egg-info
+out
